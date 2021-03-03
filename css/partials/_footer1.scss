@@ -1,0 +1,33 @@
+$main-text: black; 
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: greenyellow;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        h1 {
+            font-size: map-get($fontweight, large);
+        }
+        h2 {
+            font-size: map-get($fontweight, medium);
+        }
+    }
+    li {
+        float: left;
+        a{
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            :active {
+                text-decoration: none;
+            }
+        }
+    }
+}

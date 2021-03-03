@@ -1,0 +1,51 @@
+$fontweight: (
+    'large': 25px,
+    'medium': 20px, 
+    'small': 15px,
+    'x-small': 10px,
+);
+$main-text: black; 
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: greenyellow;
+    
+    a {
+        float: left;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: {
+            right: 2rem;
+            left: 2rem;
+        }
+    }
+
+    h1 {
+        font-size: map-get($fontweight, large);
+    }
+    h2 {
+        font-size: map-get($fontweight, medium);
+    }
+    h3 {
+        font-size: map-get($fontweight, small);
+    }
+    p {
+        font-size: map-get($fontweight, x-small);
+    }
+
+    button {
+        padding: {
+            top: .5rem;
+            bottom: .5rem;
+            right: .5rem;
+            left: .5rem;
+        }
+        :active { 
+            border-style: none;
+        }
+    }
+}

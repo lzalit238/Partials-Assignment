@@ -1,0 +1,36 @@
+$fontweight: (
+    'large': 25px,
+    'medium': 20px, 
+    'small': 15px,
+);
+$main-text: black; 
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        h1 {
+            font-size: map-get($fontweight, large);
+        }
+        h2 {
+            font-size: map-get($fontweight, medium);
+        }
+    }
+    li {
+        float: left;
+        a{
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+}

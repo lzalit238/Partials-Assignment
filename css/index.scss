@@ -1,0 +1,11 @@
+$main-text: black; 
+
+@import 'partials/_nav-bar2.scss','partials/_footer1.scss';
+
+body {
+    background-color: gray;
+    
+    a {
+        color: $main-text;
+    }
+}
